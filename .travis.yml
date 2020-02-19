@@ -1,0 +1,12 @@
+dist: xenial 
+language: node_js 
+node_js: 
+  - 10 
+addons: 
+  snaps: 
+  - name: aws-cli 
+    classic: true 
+    channel: latest/stable 
+
+before_script:
+  - 'aws --version' 
