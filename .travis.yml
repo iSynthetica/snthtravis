@@ -14,7 +14,6 @@ addons:
     channel: latest/stable 
 
 before_script:
-  - 'pip --version'
   - 'pip3 install --user aws-sam-cli'
   - 'USER_BASE_PATH=$(python -m site --user-base)'
   - 'export PATH=$PATH:$USER_BASE_PATH/bin'
